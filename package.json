@@ -9,7 +9,7 @@
     "pre:api-gateway": "cd api-gateway && npm install",
     "pre:start": "npm run pre:orders && npm run pre:products && npm run pre:api-gateway",
     "start": "cd api-gateway && node index.js",
-    "pre": "cd api-gateway && npm install && cd ../orders && npm install && cd ../products && npm install",
+    "pre": "npm install && cd api-gateway && npm install && cd ../orders && npm install && cd ../products && npm install",
     "dev:orders": "cd orders && npm run start",
     "dev:products": "cd products && npm run start",
     "dev:api-gateway": "cd api-gateway && npm run start",
