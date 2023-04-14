@@ -8,7 +8,12 @@
     "pre:products": "cd products && docker-compose up",
     "pre:api-gateway": "cd api-gateway && npm install",
     "pre:start": "npm run pre:orders && npm run pre:products && npm run pre:api-gateway",
-    "start": "cd api-gateway && node index.js"
+    "start": "cd api-gateway && node index.js",
+    "pre": "cd api-gateway && npm install && cd ../orders && npm install && cd ../products && npm install",
+    "dev:orders": "cd orders && npm run start",
+    "dev:products": "cd products && npm run start",
+    "dev:api-gateway": "cd api-gateway && npm run start",
+    "dev": "concurrently \"npm run dev:orders\" \"npm run dev:products\" \"npm run dev:api-gateway\""
   },
   "repository": {
     "type": "git",
@@ -20,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/arifpro/microservices-nodejs-docker-gateway-api/issues"
   },
-  "homepage": "https://github.com/arifpro/microservices-nodejs-docker-gateway-api#readme"
+  "homepage": "https://github.com/arifpro/microservices-nodejs-docker-gateway-api#readme",
+  "dependencies": {
+    "concurrently": "^8.0.1"
+  }
 }
