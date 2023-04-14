@@ -1,0 +1,23 @@
+{
+  "name": "microservices-nodejs-docker-gateway-api",
+  "version": "1.0.0",
+  "description": "Blog: <https://github.com/luizcalaca/microservices-nodejs-docker-gateway-api>",
+  "main": "index.js",
+  "scripts": {
+    "pre:orders": "cd orders && docker-compose up",
+    "pre:products": "cd products && docker-compose up",
+    "pre:api-gateway": "cd api-gateway && npm install",
+    "start": "cd api-gateway && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arifpro/microservices-nodejs-docker-gateway-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arifpro/microservices-nodejs-docker-gateway-api/issues"
+  },
+  "homepage": "https://github.com/arifpro/microservices-nodejs-docker-gateway-api#readme"
+}
