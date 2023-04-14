@@ -7,6 +7,7 @@
     "pre:orders": "cd orders && docker-compose up",
     "pre:products": "cd products && docker-compose up",
     "pre:api-gateway": "cd api-gateway && npm install",
+    "pre:start": "npm run pre:orders && npm run pre:products && npm run pre:api-gateway",
     "start": "cd api-gateway && node index.js"
   },
   "repository": {
