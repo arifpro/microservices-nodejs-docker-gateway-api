@@ -1,6 +1,6 @@
 # microservices-nodejs-docker-gateway-api
 
-Blog: <https://github.com/luizcalaca/microservices-nodejs-docker-gateway-api>
+[Dockerized] Microservices architecture with API Gateway
 
 ## How to run the microservices throgh API Gateway
 
@@ -27,8 +27,8 @@ npm start
 
 - Using API Gateway on browser
 
-<http://localhost:3007/orders>
-<http://localhost:3007/products>
+  - <http://localhost:3007/orders>
+  - <http://localhost:3007/products>
 
 ## Try
 
