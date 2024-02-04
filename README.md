@@ -32,12 +32,12 @@ npm start
 
 ## Try
 
-"pre:orders": "cd orders && npm install",
-"pre:products": "cd products && npm install",
-"pre:api-gateway": "cd api-gateway && npm install",
+- "pre:orders": "cd orders && npm install",
+- "pre:products": "cd products && npm install",
+- "pre:api-gateway": "cd api-gateway && npm install",
 
 or
 
-"pre:orders": "cd orders && docker-compose up",
-"pre:products": "cd products && docker-compose up",
-"pre:api-gateway": "cd api-gateway && npm install",
+- "pre:orders": "cd orders && docker-compose up",
+- "pre:products": "cd products && docker-compose up",
+- "pre:api-gateway": "cd api-gateway && npm install",
